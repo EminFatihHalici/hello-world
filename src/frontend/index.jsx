@@ -33,7 +33,14 @@ const App = () => {
 
   // This UI will be updated in the next part of this tutorial
   // to display number of comments onto the screen
-  return <Text>Hello world!</Text>;
+  return (
+   <>
+     <Text>Hello world!</Text>
+     <Text>
+       Number of comments on this issue: {comments?.length}
+     </Text>
+   </>
+ );
 };
 
 ForgeReconciler.render(
